@@ -19,11 +19,15 @@ body {
   background: white;
   width: 480px;
   border-radius: 10px;
-  box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, .2);
+  padding: 10px;
+  display: flex;
+  /* flex-direction: column; */
 }
 
 .icon {
   color: royalblue;
+  margin-right: 10px;
   font-size: 26px;
   font-weight: 700;
   background: lavender;
@@ -31,8 +35,27 @@ body {
   height: 42px;
   border-radius: 50%;
   display: flex;
+  flex-shrink: 0;
   align-items: center;
   justify-content: center;
+  border: 2px solid green;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid red; */
+  margin-left: auto;
+}
+
+.top {
+  display: flex;
+}
+
+.header {
+  margin-right: auto;
+  font-size: 1.25rem;
+  font-weight: bold;
 }
 
 .close-button {
@@ -49,6 +72,7 @@ body {
 }
 
 button {
+  margin-top: 20px;
   padding: 8px 16px;
   border-radius: 8px;
 }
